@@ -34,15 +34,15 @@ class BubbleSortOptimized
 
 
 #endregion
-//#region Q2
-//#region 1 Create Generic Class Range<T>
-//public class Range<T> where T : IComparable<T>
-//{
-//    public T Min { get; private set; }
-//    public T Max { get; private set; }
+#region Q2
+#region 1 Create Generic Class Range<T>
+public class Range<T> where T : IComparable<T>
+{
+    public T Min { get; private set; }
+    public T Max { get; private set; }
+}
 
-
-//    #endregion
+    #endregion
 //    #region 2  Constructor to define the range
 //    public Range(T min, T max)
 //    {
@@ -63,7 +63,7 @@ class BubbleSortOptimized
 
 //    #endregion
 //    #region 4  Method: Length of range(works only for numeric types)
-   
+
 //        public double Length()
 //    {
 //        try
@@ -79,4 +79,4 @@ class BubbleSortOptimized
 //    }
 //}
 //#endregion
-//#endregion
+#endregion
