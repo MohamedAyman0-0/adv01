@@ -40,13 +40,22 @@ public class Range<T> where T : IComparable<T>
 {
     public T Min { get; private set; }
     public T Max { get; private set; }
+
+
+    #endregion
+    #region 2  Constructor to define the range
+    public Range(T min, T max)
+    {
+        if (min.CompareTo(max) > 0)
+            throw new ArgumentException("Min must be less than or equal to Max.");
+
+        Min = min;
+        Max = max;
+    }
 }
 
 #endregion
-#region Q2
-
-#endregion
-#region Q2
+#region 3
 
 #endregion
 #endregion
