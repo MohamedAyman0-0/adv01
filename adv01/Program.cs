@@ -52,10 +52,14 @@ public class Range<T> where T : IComparable<T>
         Min = min;
         Max = max;
     }
+
+
+    #endregion
+    #region 3  Method: Check if value is inside range
+    public bool IsInRange(T value)
+    {
+        return value.CompareTo(Min) >= 0 && value.CompareTo(Max) <= 0;
+    }
 }
-
-#endregion
-#region 3
-
 #endregion
 #endregion
