@@ -34,49 +34,49 @@ class BubbleSortOptimized
 
 
 #endregion
-#region Q2
-#region 1 Create Generic Class Range<T>
-public class Range<T> where T : IComparable<T>
-{
-    public T Min { get; private set; }
-    public T Max { get; private set; }
+//#region Q2
+//#region 1 Create Generic Class Range<T>
+//public class Range<T> where T : IComparable<T>
+//{
+//    public T Min { get; private set; }
+//    public T Max { get; private set; }
 
 
-    #endregion
-    #region 2  Constructor to define the range
-    public Range(T min, T max)
-    {
-        if (min.CompareTo(max) > 0)
-            throw new ArgumentException("Min must be less than or equal to Max.");
+//    #endregion
+//    #region 2  Constructor to define the range
+//    public Range(T min, T max)
+//    {
+//        if (min.CompareTo(max) > 0)
+//            throw new ArgumentException("Min must be less than or equal to Max.");
 
-        Min = min;
-        Max = max;
-    }
+//        Min = min;
+//        Max = max;
+//    }
 
 
-    #endregion
-    #region 3  Method: Check if value is inside range
-    public bool IsInRange(T value)
-    {
-        return value.CompareTo(Min) >= 0 && value.CompareTo(Max) <= 0;
-    }
+//    #endregion
+//    #region 3  Method: Check if value is inside range
+//    public bool IsInRange(T value)
+//    {
+//        return value.CompareTo(Min) >= 0 && value.CompareTo(Max) <= 0;
+//    }
 
-    #endregion
-    #region 4  Method: Length of range(works only for numeric types)
+//    #endregion
+//    #region 4  Method: Length of range(works only for numeric types)
    
-        public double Length()
-    {
-        try
-        {
-            double minVal = Convert.ToDouble(Min);
-            double maxVal = Convert.ToDouble(Max);
-            return maxVal - minVal;
-        }
-        catch
-        {
-            throw new InvalidOperationException("Length can only be calculated for numeric types.");
-        }
-    }
-}
-#endregion
-#endregion
+//        public double Length()
+//    {
+//        try
+//        {
+//            double minVal = Convert.ToDouble(Min);
+//            double maxVal = Convert.ToDouble(Max);
+//            return maxVal - minVal;
+//        }
+//        catch
+//        {
+//            throw new InvalidOperationException("Length can only be calculated for numeric types.");
+//        }
+//    }
+//}
+//#endregion
+//#endregion
