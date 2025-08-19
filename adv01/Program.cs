@@ -34,5 +34,19 @@ class BubbleSortOptimized
 
 
 #endregion
-#region 
+#region Q2
+#region 1 Create Generic Class Range<T>
+public class Range<T> where T : IComparable<T>
+{
+    public T Min { get; private set; }
+    public T Max { get; private set; }
+}
+
+#endregion
+#region Q2
+
+#endregion
+#region Q2
+
+#endregion
 #endregion
