@@ -60,6 +60,23 @@ public class Range<T> where T : IComparable<T>
     {
         return value.CompareTo(Min) >= 0 && value.CompareTo(Max) <= 0;
     }
+
+    #endregion
+    #region 4  Method: Length of range(works only for numeric types)
+   
+        public double Length()
+    {
+        try
+        {
+            double minVal = Convert.ToDouble(Min);
+            double maxVal = Convert.ToDouble(Max);
+            return maxVal - minVal;
+        }
+        catch
+        {
+            throw new InvalidOperationException("Length can only be calculated for numeric types.");
+        }
+    }
 }
 #endregion
 #endregion
