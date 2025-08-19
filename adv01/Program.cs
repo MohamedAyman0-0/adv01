@@ -53,15 +53,15 @@ public class Range<T> where T : IComparable<T>
         Max = max;
     }
 
+
+    #endregion
+    #region  3  Method: Check if value is inside range 
+    public bool IsInRange(T value)
+    {
+        return value.CompareTo(Min) >= 0 && value.CompareTo(Max) <= 0;
+    }
 }
     #endregion
-//    #region 3  Method: Check if value is inside range
-//    public bool IsInRange(T value)
-//    {
-//        return value.CompareTo(Min) >= 0 && value.CompareTo(Max) <= 0;
-//    }
-
-//    #endregion
 //    #region 4  Method: Length of range(works only for numeric types)
 
 //        public double Length()
